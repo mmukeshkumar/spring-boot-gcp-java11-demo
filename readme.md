@@ -7,7 +7,7 @@ Demo Java 11 maven project showcasing Spring boot, Spring cloud GCP, GAE Standar
 3. Enable billing
 
 # Building
-Build: ./mvnw clean install
+./mvnw clean install
 
 # Running: 
 java -jar target/spring-boot-gcp-java11-demo-0.0.1-SNAPSHOT.jar
@@ -23,7 +23,7 @@ Post a greeting message to the Cloud PUb/SUB
 curl -i -XPOST http://localhost:8080/greet/goodday
 
 # Deploying to google app engine:
-./mvnw appengine:deploy
+./mvnw appengine:deploy -Dapp.deploy.projectId=[your-gcp-proeject-name]
 
 
 
